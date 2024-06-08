@@ -4,66 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1 Year Anniversary Letter</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            overflow: hidden; /* Hide overflow to prevent scroll bars */
-        }
-        
-        .heartbeat-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('moti-hearts.gif') center center no-repeat;
-            background-size: cover;
-            z-index: -1; /* Make sure it's behind the content */
-            animation: heartbeat 1.5s infinite; /* Add heartbeat animation */
-        }
-        
-        @keyframes heartbeat {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-        
-        .letter-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-            z-index: 1; /* Make sure it's above the background */
-        }
-        
-        .letter {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 10px;
-        }
-        
-        h1 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="moti-hearts-bg"></div>
+    <div class="heartbeat-bg"></div>
     <div class="letter-container">
         <h1>1 Year Anniversary Letter</h1>
         <div class="letter">
             <p>Dear Matilda,</p>
+            <p>Happy 1 Year Anniversary!</p>
+             <p>Dear Matilda,</p>
             <p>Happy 1 Year Anniversary!</p>
             <p>It's hard to believe it's been a whole year since we embarked on this journey together. Time flies when you're in love, doesn't it?</p>
             <p>Reflecting on the past year fills my heart with warmth and gratitude. We've shared countless memories, laughter, and even a few tears. Through it all, one thing remains constant - my love for you.</p>
@@ -76,3 +26,54 @@
     </div>
 </body>
 </html>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Hide overflow to prevent scroll bars */
+}
+
+.heartbeat-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('heartbeat.gif') center center no-repeat;
+    background-size: cover;
+    z-index: -1; /* Make sure it's behind the content */
+    animation: heartbeat 1.5s infinite; /* Add heartbeat animation */
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.letter-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1; /* Make sure it's above the background */
+}
+
+.letter {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
